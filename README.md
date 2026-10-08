@@ -85,13 +85,11 @@
 
 ![电脑版首页](assets/pc-01-home.png)
 
-![电脑版剧集列表](assets/pc-02-list.png)
-
 ### TV 版
 
 ![TV 版首页](assets/tv-01-home.png)
 
-![TV 版继续观看](assets/tv-02-rail.png)
+![TV 版分类列表](assets/tv-02-rail.png)
 
 ![TV 版详情页](assets/tv-03-detail.png)
 
