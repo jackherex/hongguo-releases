@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>短剧之家 · 全平台下载</title>
+<meta name="description" content="短剧之家 · 全平台下载｜手机版 / 电脑版 / TV 版安装包与更新说明，含加速下载">
+<style>
+:root{--bg:#0a0a0c;--card:#15151a;--card2:#1d1d24;--line:#2a2a33;
+--fg:#f4f4f6;--dim:#9b9ba6;--accent:#ff4d4f;--ok:#3ddc84}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);
+font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:30px 18px 90px}
+h1{font-size:30px;margin:0 0 6px;letter-spacing:-.5px}
+.sub{color:var(--dim);margin:0 0 22px}
+.verbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.pill{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:6px 14px;font-size:14px;color:var(--dim)}
+.pill b{color:var(--fg);font-weight:600}
+.note{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);
+border-radius:10px;padding:12px 16px;color:var(--dim);font-size:14.5px;margin:0 0 30px}
+h2{font-size:22px;margin:46px 0 14px;padding-top:8px}
+h3{font-size:17px;margin:26px 0 10px}
+p{margin:10px 0}
+.grid{display:grid;gap:16px}
+@media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px}
+.card h4{margin:0 0 4px;font-size:17px}
+.card .meta{color:var(--dim);font-size:13.5px;margin:0 0 12px;word-break:break-all}
+.card .fn{color:var(--dim);font-size:12.5px;margin:0 0 10px;word-break:break-all;
+font-family:ui-monospace,Consolas,monospace}
+.btns{display:flex;flex-wrap:wrap;gap:9px}
+.btn{display:inline-block;text-decoration:none;border-radius:9px;padding:9px 16px;
+font-size:14.5px;font-weight:600;border:1px solid var(--line);background:var(--card2);transition:.15s}
+.btn:hover{transform:translateY(-1px);border-color:#3d3d48}
+.btn.p{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.p:hover{background:#ff6466}
+.tag{display:inline-block;background:#23232b;border-radius:6px;padding:2px 8px;
+font-size:12.5px;color:var(--dim);margin-left:6px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+th{background:var(--card2);font-weight:600;white-space:nowrap}
+td code{background:#23232b;border-radius:5px;padding:1px 6px;font-size:13px;
+font-family:ui-monospace,Consolas,monospace;word-break:break-all}
+.warn{background:#241a1a;border:1px solid #4a2a2a;border-radius:10px;
+padding:12px 16px;margin:14px 0;font-size:14.5px;color:#f0c9c9}
+.shots{display:grid;gap:16px;margin:16px 0}
+.shots figure{margin:0}
+.shots img{width:100%;display:block;border-radius:12px;border:1px solid var(--line)}
+.shots figcaption{color:var(--dim);font-size:13.5px;margin-top:8px;text-align:center}
+@media(min-width:760px){.shots.two{grid-template-columns:1fr 1fr}}
+.phonewrap{max-width:320px;margin:16px auto}
+details{background:var(--card);border:1px solid var(--line);border-radius:11px;
+padding:13px 17px;margin:9px 0}
+summary{cursor:pointer;font-weight:600;font-size:15px}
+details p{color:var(--dim);font-size:14.5px;margin:9px 0 2px}
+pre{background:#0f0f13;border:1px solid var(--line);border-radius:9px;
+padding:11px 13px;overflow-x:auto;font-size:12px;color:#c9c9d4;margin:6px 0 14px;
+font-family:ui-monospace,Consolas,monospace;white-space:pre-wrap;word-break:break-all}
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
+color:var(--dim);font-size:13.5px}
+.err{background:#241a1a;border:1px solid #4a2a2a;border-radius:10px;padding:11px 15px;
+font-size:14px;color:#f0c9c9;margin:0 0 18px;display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>短剧之家 · 全平台下载</h1>
+  <p class="sub">在手机、电脑、电视上找剧、接着上次看。免费使用。</p>
+
+  <div class="verbar" id="verbar">
+    <span class="pill">手机版 <b id="v-phone">1.0.65+66</b></span>
+    <span class="pill">电脑版 <b id="v-pc">1.0.58+59</b></span>
+    <span class="pill">TV 版 <b id="v-tv">1.0.56+57</b></span>
+  </div>
+
+  <div class="err" id="err"></div>
+
+  <div class="note">
+    每个安装包都给了两条链接：<b>加速下载</b>走公共加速服务，国内通常更快；
+    连不上时点旁边的<b>官方直链</b>。两条链接的文件完全一样。
+    <br>本页的版本号与下载地址<b>会自动指向最新版</b>，发新版不用回来改链接。
+  </div>
+
+  <h2>三个版本分别是什么</h2>
+  <table>
+    <tr><th>版本</th><th>装在哪</th><th>怎么操作</th></tr>
+    <tr><td><b>手机版</b></td><td>安卓手机 / 平板</td><td>触屏，竖屏；支持下载缓存、后台播放、有声书模式</td></tr>
+    <tr><td><b>电脑版</b></td><td>Windows 10 / 11（64 位）</td><td>键盘鼠标，横屏大画面；适合一次连看好几集</td></tr>
+    <tr><td><b>TV 版</b></td><td>电视盒子 / 智能电视</td><td>遥控器；为客厅大屏做了焦点高亮和字号放大</td></tr>
+  </table>
+  <p style="color:var(--dim);font-size:14.5px">三个版本可以<b>同时装</b>，互不冲突；观看进度也能互相同步。</p>
+
+  <h2>手机版（安卓）</h2>
+  <div class="card" id="card-phone">
+    <h4>短剧之家 · 手机版</h4>
+    <p class="meta" id="m-phone">加载中…</p>
+    <p class="fn" id="f-phone"></p>
+    <div class="btns" id="b-phone"></div>
+  </div>
+
+  <h2>电脑版（Windows 10 / 11）</h2>
+  <h3>两个文件有什么区别？</h3>
+  <table>
+    <tr><th>文件</th><th>是什么</th><th>适合谁</th></tr>
+    <tr>
+      <td><code>…-setup.exe</code><br><b>安装版</b></td>
+      <td>双击安装，自动创建桌面快捷方式，之后能在「设置 → 应用」里正常卸载。</td>
+      <td><b>大多数人选这个</b>，省事</td>
+    </tr>
+    <tr>
+      <td><code>…-windows-x64.zip</code><br><b>免安装版</b></td>
+      <td>解压到任意文件夹，双击里面的程序就能用。不写注册表，不要了直接删文件夹。</td>
+      <td>想放 U 盘随身带、或在别人电脑上用完就删</td>
+    </tr>
+  </table>
+  <p style="color:var(--dim);font-size:14.5px">
+    两个文件里的程序<b>功能完全一样</b>，只是打包方式不同 —— <b>装一个就行，不用都下</b>。
+  </p>
+  <div class="grid two">
+    <div class="card">
+      <h4>安装版 <span class="tag">推荐</span></h4>
+      <p class="meta" id="m-pc-exe">加载中…</p>
+      <p class="fn" id="f-pc-exe"></p>
+      <div class="btns" id="b-pc-exe"></div>
+    </div>
+    <div class="card">
+      <h4>免安装版</h4>
+      <p class="meta" id="m-pc-zip">加载中…</p>
+      <p class="fn" id="f-pc-zip"></p>
+      <div class="btns" id="b-pc-zip"></div>
+    </div>
+  </div>
+  <div class="warn">
+    首次运行时若弹出蓝色的「Windows 已保护你的电脑」，点<b>「更多信息 → 仍要运行」</b>。
+    这是因为安装包没有购买数字证书，<b>不代表文件有问题</b>；可用页面末尾的校验值核对文件是否完整。
+  </div>
+
+  <h2>TV 版（电视盒子 / 智能电视）</h2>
+  <h3><code>arm64-v8a</code> 和 <code>armeabi-v7a</code> 有什么区别？</h3>
+  <p>这两个名字代表<b>设备处理器的位数</b>：</p>
+  <table>
+    <tr><th>文件</th><th>通俗说</th><th>什么时候选</th></tr>
+    <tr>
+      <td><code>…-arm64-v8a.apk</code><br><b>64 位版</b></td>
+      <td>给 64 位处理器用</td>
+      <td><b>先试这个</b>。近几年的盒子和智能电视基本都是</td>
+    </tr>
+    <tr>
+      <td><code>…-armeabi-v7a.apk</code><br><b>32 位版</b></td>
+      <td>给 32 位处理器用</td>
+      <td>上面那个<b>装不上或打开就闪退</b>时换这个</td>
+    </tr>
+  </table>
+  <div class="warn">
+    ⚠️ <b>重要</b>：很多电视盒子的芯片是 64 位，但厂家只提供了 32 位系统 ——
+    这种情况<b>只能装 32 位版</b>。所以「64 位版装不上」<b>不代表盒子有问题</b>，换成 32 位版就行。
+  </div>
+  <div class="grid two">
+    <div class="card">
+      <h4>64 位版 <span class="tag">先试这个</span></h4>
+      <p class="meta" id="m-tv-a">加载中…</p>
+      <p class="fn" id="f-tv-a"></p>
+      <div class="btns" id="b-tv-a"></div>
+    </div>
+    <div class="card">
+      <h4>32 位版</h4>
+      <p class="meta" id="m-tv-v">加载中…</p>
+      <p class="fn" id="f-tv-v"></p>
+      <div class="btns" id="b-tv-v"></div>
+    </div>
+  </div>
+
+  <h2>软件界面</h2>
+  <h3>电脑版</h3>
+  <div class="shots two">
+    <figure><img src="assets/pc-01-home.png" alt="电脑版首页" loading="lazy"><figcaption>首页 · 继续观看</figcaption></figure>
+    <figure><img src="assets/pc-02-list.png" alt="电脑版剧集列表" loading="lazy"><figcaption>剧集列表</figcaption></figure>
+  </div>
+  <h3>TV 版</h3>
+  <div class="shots two">
+    <figure><img src="assets/tv-01-home.png" alt="TV 版首页" loading="lazy"><figcaption>首页</figcaption></figure>
+    <figure><img src="assets/tv-02-rail.png" alt="TV 版继续观看" loading="lazy"><figcaption>继续观看</figcaption></figure>
+  </div>
+  <div class="shots">
+    <figure><img src="assets/tv-03-detail.png" alt="TV 版详情页" loading="lazy"><figcaption>详情页</figcaption></figure>
+  </div>
+  <h3>手机版</h3>
+  <div class="phonewrap">
+    <img src="assets/phone-01-detail.png" alt="手机版详情页" loading="lazy"
+         style="width:100%;display:block;border-radius:14px;border:1px solid var(--line)">
+  </div>
+
+  <h2>常见问题</h2>
+  <details open><summary>三个版本要装几个？</summary>
+    <p>各装各的。同一台设备装一个就行，装多了也不会互相影响。</p></details>
+  <details><summary>观看进度能同步吗？</summary>
+    <p>可以。三个版本都能在「设置」里配置设备互联或 WebDAV（坚果云、群晖、OpenList 都支持），各设备填<b>同一套</b>配置即可。</p></details>
+  <details><summary>装完打不开、或者闪退？</summary>
+    <p>TV 版先确认位数选对了（见上面那节）；手机版确认系统是安卓 8.0 以上；电脑版确认是 Windows 10 / 11 的 64 位系统。</p></details>
+  <details><summary>怎么更新到新版本？</summary>
+    <p>应用内会提示新版本，点一下就能更新。也可以随时回到本页下载最新安装包 —— 本页的版本号与下载地址会自动指向最新版。</p></details>
+  <details><summary>下载速度慢？</summary>
+    <p>点<b>加速下载</b>那条链接试试；还慢就换<b>官方直链</b>。两条链接的文件完全一样。</p></details>
+
+  <h2>使用反馈</h2>
+  <p>遇到问题请到 <a id="issues-link" href="https://github.com/jackherex/hongguo-releases/issues">反馈区</a> 说明：
+     <b>设备型号、系统版本、软件版本</b>（设置页最下方能看到），以及<b>怎么操作会出现问题</b>。</p>
+
+  <h2>下载与安装说明</h2>
+  <p>下面这组校验值用来核对文件有没有下载完整：</p>
+  <div id="sha"></div>
+  <p style="color:var(--dim);font-size:14.5px">这串数字<b>用来核对文件完整性，不能代替身份认证</b>。</p>
+
+  <footer>
+    本页是<b>公开下载页</b>，只放安装包和更新说明，供大家直接下载。应用免费使用。<br>
+    剧中内容来自网络，相关品牌与内容归各自权利方所有。
+  </footer>
+</div>
+
+<script>
+var OWNER = "jackherex";
+var GH_PROXY = "https://gh-proxy.com/";
+var LINES = [{"key": "phone", "repo": "duanjuzhijia-down-phone", "info": "v2.json"}, {"key": "pc", "repo": "duanjuzhijia-down-pc", "info": "v2.json"}, {"key": "tv", "repo": "duanjuzhijia-down-tv", "info": "tv.json"}];
+var FALLBACK = {"phone": {"version": "1.0.65+66", "assets": [{"name": "duanjuzhijia2-1.0.65+66-arm64-v8a.apk", "size": 35569898, "url": "https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.65-66/duanjuzhijia2-1.0.65%2B66-arm64-v8a.apk", "urls": ["https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.65-66/duanjuzhijia2-1.0.65%2B66-arm64-v8a.apk", "https://ghproxy.net/https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.65-66/duanjuzhijia2-1.0.65%2B66-arm64-v8a.apk", "https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.65-66/duanjuzhijia2-1.0.65%2B66-arm64-v8a.apk", "https://ghfast.top/https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.65-66/duanjuzhijia2-1.0.65%2B66-arm64-v8a.apk"], "sha256": "6a85d33fdfbda01a76e9ebd490206eaea1acc4d72b0a19f254a43c95a50d077e"}]}, "pc": {"version": "1.0.58+59", "assets": [{"name": "duanjuzhijia2-1.0.58+59-setup.exe", "size": 68525802, "url": "https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v1.0.58-59/duanjuzhijia2-1.0.58%2B59-setup.exe", "urls": ["https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v1.0.58-59/duanjuzhijia2-1.0.58%2B59-setup.exe", "https://ghproxy.net/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v1.0.58-59/duanjuzhijia2-1.0.58%2B59-setup.exe", "https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v1.0.58-59/duanjuzhijia2-1.0.58%2B59-setup.exe", "https://ghfast.top/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v1.0.58-59/duanjuzhijia2-1.0.58%2B59-setup.exe"], "sha256": "9878e0e00c3758c2553352837c1eb90cb350af55efa35be473ee4a45964f8bb0"}, {"name": "duanjuzhijia2-1.0.58+59-windows-x64.zip", "size": 95106126, "url": "https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v1.0.58-59/duanjuzhijia2-1.0.58%2B59-windows-x64.zip", "urls": ["https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v1.0.58-59/duanjuzhijia2-1.0.58%2B59-windows-x64.zip", "https://ghproxy.net/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v1.0.58-59/duanjuzhijia2-1.0.58%2B59-windows-x64.zip", "https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v1.0.58-59/duanjuzhijia2-1.0.58%2B59-windows-x64.zip", "https://ghfast.top/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v1.0.58-59/duanjuzhijia2-1.0.58%2B59-windows-x64.zip"], "sha256": "6d90b5a58810873c4b7c47bea0173dc85247477fb6522569e964ba879cb9e615"}]}, "tv": {"version": "1.0.56+57", "assets": [{"name": "duanjuzhijiatv-1.0.56+57-arm64-v8a.apk", "size": 31739634, "url": "https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.56-57/duanjuzhijiatv-1.0.56%2B57-arm64-v8a.apk", "urls": ["https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.56-57/duanjuzhijiatv-1.0.56%2B57-arm64-v8a.apk", "https://ghproxy.net/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.56-57/duanjuzhijiatv-1.0.56%2B57-arm64-v8a.apk", "https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.56-57/duanjuzhijiatv-1.0.56%2B57-arm64-v8a.apk", "https://ghfast.top/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.56-57/duanjuzhijiatv-1.0.56%2B57-arm64-v8a.apk"], "sha256": "e183ede5db0e68c1c1c2307abc72b4897ed83ea208f2baf555d934fcede9f0aa"}, {"name": "duanjuzhijiatv-1.0.56+57-armeabi-v7a.apk", "size": 40292282, "url": "https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.56-57/duanjuzhijiatv-1.0.56%2B57-armeabi-v7a.apk", "urls": ["https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.56-57/duanjuzhijiatv-1.0.56%2B57-armeabi-v7a.apk", "https://ghproxy.net/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.56-57/duanjuzhijiatv-1.0.56%2B57-armeabi-v7a.apk", "https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.56-57/duanjuzhijiatv-1.0.56%2B57-armeabi-v7a.apk", "https://ghfast.top/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.56-57/duanjuzhijiatv-1.0.56%2B57-armeabi-v7a.apk"], "sha256": "f22a8a89f19a471bb0007245bf80d5753ed1b2e314700035117d68cd0d4173fe"}]}};
+var ISSUES = "https://github.com/jackherex/hongguo-releases/issues";
+
+function b64utf8(b64){
+  var bin = atob(String(b64).replace(/\s/g,""));
+  var bytes = new Uint8Array(bin.length);
+  for (var i=0;i<bin.length;i++) bytes[i] = bin.charCodeAt(i);
+  return new TextDecoder("utf-8").decode(bytes);
+}
+
+function fromApi(text){
+  var j = JSON.parse(text);
+  return JSON.parse(b64utf8(j.content));
+}
+
+function getJSON(url, apiMode){
+  return fetch(url, {cache:"no-store"}).then(function(r){
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return r.text();
+  }).then(function(t){ return apiMode ? fromApi(t) : JSON.parse(t); });
+}
+
+/* 先问 API（权威），失败再退到 raw（无频率限制但会滞后几分钟）。 */
+function loadLine(line){
+  var api = "https://api.github.com/repos/" + OWNER + "/" + line.repo
+          + "/contents/" + line.info;
+  var raw = "https://raw.githubusercontent.com/" + OWNER + "/" + line.repo
+          + "/main/" + line.info;
+  return getJSON(api, true).catch(function(){ return getJSON(raw, false); });
+}
+
+function proxyOf(a){
+  var us = a.urls || [];
+  for (var i=0;i<us.length;i++){
+    if (us[i].indexOf(GH_PROXY) === 0) return us[i];
+  }
+  return GH_PROXY + a.url;
+}
+
+function sizeTxt(n){
+  return (n/1024/1024).toFixed(1) + " MB";
+}
+
+function setBtns(id, a){
+  var el = document.getElementById(id);
+  el.innerHTML = "";
+  var p = document.createElement("a");
+  p.className = "btn p"; p.href = proxyOf(a);
+  p.textContent = "⬇ 加速下载";
+  var d = document.createElement("a");
+  d.className = "btn"; d.href = a.url;
+  d.textContent = "官方直链";
+  el.appendChild(p); el.appendChild(d);
+}
+
+function setMeta(id, v, a){
+  var d = "";
+  if (a.publishedAt) d = " · " + String(a.publishedAt).slice(0,10) + " 发布";
+  document.getElementById(id).textContent =
+    "版本 " + v + " · " + sizeTxt(a.size) + d;
+}
+
+function renderLine(line, m){
+  var v = m.version, as = m.assets || [];
+  document.getElementById("v-" + line.key).textContent = v;
+  function find(re){ for (var i=0;i<as.length;i++){ if (re.test(as[i].name)) return as[i]; } }
+  function one(){
+    var a = as[0];
+    setMeta("m-" + line.key, v, a);
+    document.getElementById("f-" + line.key).textContent = a.name;
+    setBtns("b-" + line.key, a);
+  }
+  if (line.key === "pc"){
+    var exe = find(/\.exe$/), zp = find(/\.zip$/);
+    if (exe){ setMeta("m-pc-exe", v, exe);
+      document.getElementById("f-pc-exe").textContent = exe.name;
+      setBtns("b-pc-exe", exe); }
+    if (zp){ setMeta("m-pc-zip", v, zp);
+      document.getElementById("f-pc-zip").textContent = zp.name;
+      setBtns("b-pc-zip", zp); }
+    document.getElementById("v-pc").textContent = v;
+  } else if (line.key === "tv"){
+    var a64 = find(/arm64-v8a/), v7 = find(/armeabi-v7a/);
+    if (a64){ setMeta("m-tv-a", v, a64);
+      document.getElementById("f-tv-a").textContent = a64.name;
+      setBtns("b-tv-a", a64); }
+    if (v7){ setMeta("m-tv-v", v, v7);
+      document.getElementById("f-tv-v").textContent = v7.name;
+      setBtns("b-tv-v", v7); }
+    document.getElementById("v-tv").textContent = v;
+  } else {
+    one();
+  }
+  return m;
+}
+
+function renderSha(ms){
+  var box = document.getElementById("sha"), h = "";
+  for (var k=0;k<LINES.length;k++){
+    var m = ms[LINES[k].key]; if (!m) continue;
+    for (var i=0;i<m.assets.length;i++){
+      var a = m.assets[i];
+      h += "<div style='margin:0 0 6px'><code style='font-size:13px'>" + a.name
+         + "</code></div><pre>" + (a.sha256 || "(未提供)") + "</pre>";
+    }
+  }
+  box.innerHTML = h;
+}
+
+function showErr(t){
+  var e = document.getElementById("err");
+  e.textContent = t; e.style.display = "block";
+}
+
+/* 静态兜底：两份都取不到时，页面仍然可用 */
+function useFallback(){
+  var ms = {};
+  for (var k=0;k<LINES.length;k++) ms[LINES[k].key] = FALLBACK[LINES[k].key];
+  for (var k2=0;k2<LINES.length;k2++) renderLine(LINES[k2], ms[LINES[k2].key]);
+  renderSha(ms);
+  showErr("提示：暂时没能取到最新版本信息，下面显示的是本页更新时的版本，"
+        + "可能已经不是最新的。请稍后刷新，或到各版本页面查看。");
+}
+
+(function(){
+  document.getElementById("issues-link").href = ISSUES;
+  var cached = null;
+  try {
+    var c = sessionStorage.getItem("hub_m");
+    if (c){ var o = JSON.parse(c);
+      if (Date.now() - o.t < 10*60*1000) cached = o.d; }
+  } catch(e){}
+  if (cached){ 
+    for (var k=0;k<LINES.length;k++) renderLine(LINES[k], cached[LINES[k].key]);
+    renderSha(cached); return;
+  }
+  var got = {};
+  Promise.all(LINES.map(function(l){
+    return loadLine(l).then(function(m){ got[l.key] = m; })
+                       .catch(function(){ got[l.key] = null; });
+  })).then(function(){
+    var ok = 0;
+    for (var k=0;k<LINES.length;k++){ if (got[LINES[k].key]) ok++; }
+    if (!ok){ useFallback(); return; }
+    if (ok < LINES.length){
+      showErr("提示：有 " + (LINES.length - ok) + " 个版本的信息暂时没取到，"
+            + "下面显示的是本页更新时的版本。");
+      for (var j=0;j<LINES.length;j++){
+        if (!got[LINES[j].key]) got[LINES[j].key] = FALLBACK[LINES[j].key];
+      }
+    }
+    for (var i=0;i<LINES.length;i++) renderLine(LINES[i], got[LINES[i].key]);
+    renderSha(got);
+    try { sessionStorage.setItem("hub_m", JSON.stringify({t:Date.now(), d:got})); }
+    catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
