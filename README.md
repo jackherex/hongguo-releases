@@ -2,7 +2,7 @@
 
 在手机、电脑、电视上找剧、接着上次看。支持搜索、收藏、选集、倍速、自动连播。
 
-**免费使用 · 当前版本：手机版 `1.0.65+66` · 电脑版 `2.0.0+76` · TV 版 `1.0.66+67`**
+**免费使用 · 当前版本：手机版 `1.0.65+66` · 电脑版 `2.0.1+77` · TV 版 `1.0.66+67`**
 
 > 每个下载按钮都给了**两条链接**：
 > **加速下载**走公共加速服务，国内通常更快；连不上时点旁边的**官方直链**。
@@ -41,16 +41,16 @@
 
 | 文件 | 是什么 | 适合谁 |
 |---|---|---|
-| `duanjuzhijia2-2.0.0+76-setup.exe`<br>**65.4 MB** | **安装版**：双击安装，自动创建桌面快捷方式，之后能在「设置 → 应用」里正常卸载。 | **大多数人选这个**，省事 |
-| `duanjuzhijia2-2.0.0+76-windows-x64.zip`<br>**90.7 MB** | **免安装版**：解压到任意文件夹，双击里面的程序就能用。不写注册表，不要了直接删文件夹。 | 想放 U 盘随身带、或在别人电脑上用完就删 |
+| `duanjuzhijia2-2.0.1+77-setup.exe`<br>**65.4 MB** | **安装版**：双击安装，自动创建桌面快捷方式，之后能在「设置 → 应用」里正常卸载。 | **大多数人选这个**，省事 |
+| `duanjuzhijia2-2.0.1+77-windows-x64.zip`<br>**90.7 MB** | **免安装版**：解压到任意文件夹，双击里面的程序就能用。不写注册表，不要了直接删文件夹。 | 想放 U 盘随身带、或在别人电脑上用完就删 |
 
 > 两个文件里的程序**功能完全一样**，只是打包方式不同 —— **装一个就行，不用都下**。
 
 ### 下载
 
-**安装版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.0-76/duanjuzhijia2-2.0.0%2B76-setup.exe)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.0-76/duanjuzhijia2-2.0.0%2B76-setup.exe)
+**安装版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.1-77/duanjuzhijia2-2.0.1%2B77-setup.exe)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.1-77/duanjuzhijia2-2.0.1%2B77-setup.exe)
 
-**免安装版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.0-76/duanjuzhijia2-2.0.0%2B76-windows-x64.zip)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.0-76/duanjuzhijia2-2.0.0%2B76-windows-x64.zip)
+**免安装版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.1-77/duanjuzhijia2-2.0.1%2B77-windows-x64.zip)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.1-77/duanjuzhijia2-2.0.1%2B77-windows-x64.zip)
 
 > 首次运行时若弹出蓝色的「Windows 已保护你的电脑」，点「更多信息 → 仍要运行」。
 > 这是因为安装包没有购买数字证书，**不代表文件有问题**；可用文末的校验值核对文件是否完整。
@@ -138,20 +138,20 @@ TV 版先确认位数选对了（见上面那节）；手机版确认系统是�
 6a85d33fdfbda01a76e9ebd490206eaea1acc4d72b0a19f254a43c95a50d077e
 ```
 
-### `duanjuzhijia2-2.0.0+76-setup.exe`
+### `duanjuzhijia2-2.0.1+77-setup.exe`
 
-大小 `68545986` 字节。SHA-256：
-
-```
-d31fd2263d6fa857c8a8a645ca2edf4bfa06a22f8305b31968a47d28b5c25305
-```
-
-### `duanjuzhijia2-2.0.0+76-windows-x64.zip`
-
-大小 `95128873` 字节。SHA-256：
+大小 `68534840` 字节。SHA-256：
 
 ```
-2fe53885c0be52a628dcc33a8ad314ff933979bf9eb4195ad0c2a863ea22c801
+68427126370c2e58d673a744b93447c6c3274f9c1936fc5c8224dcc4d9b988ec
+```
+
+### `duanjuzhijia2-2.0.1+77-windows-x64.zip`
+
+大小 `95135264` 字节。SHA-256：
+
+```
+dd6efa8070489dc8cf2c75cae316cd28d4208d4b04068d012def812f5b2a4053
 ```
 
 ### `duanjuzhijiatv-1.0.66+67-arm64-v8a.apk`
