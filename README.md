@@ -1,8 +1,8 @@
-# 短剧之家 · 全平台下载
+# 短剧之家（红果）· 全平台下载
 
 在手机、电脑、电视上找剧、接着上次看。支持搜索、收藏、选集、倍速、自动连播。
 
-**免费使用 · 当前版本：手机版 `1.0.65+66` · 电脑版 `2.0.0+76` · TV 版 `1.0.60+61`**
+**免费使用 · 当前版本：手机版 `1.0.65+66` · 电脑版 `2.0.0+76` · TV 版 `1.0.62+63`**
 
 > 每个下载按钮都给了**两条链接**：
 > **加速下载**走公共加速服务，国内通常更快；连不上时点旁边的**官方直链**。
@@ -65,17 +65,17 @@
 
 | 文件 | 通俗说 | 什么时候选 |
 |---|---|---|
-| `duanjuzhijiatv-1.0.60+61-arm64-v8a.apk`<br>**30.3 MB** | **64 位版** | **先试这个**。近几年的盒子和智能电视基本都是 |
-| `duanjuzhijiatv-1.0.60+61-armeabi-v7a.apk`<br>**38.5 MB** | **32 位版** | 上面那个**装不上或打开就闪退**时换这个 |
+| `duanjuzhijiatv-1.0.62+63-arm64-v8a.apk`<br>**30.3 MB** | **64 位版** | **先试这个**。近几年的盒子和智能电视基本都是 |
+| `duanjuzhijiatv-1.0.62+63-armeabi-v7a.apk`<br>**38.5 MB** | **32 位版** | 上面那个**装不上或打开就闪退**时换这个 |
 
 > ⚠️ **重要**：很多电视盒子的芯片是 64 位，但厂家只提供了 32 位系统 —— 这种情况
 > **只能装 32 位版**。所以「64 位版装不上」**不代表盒子有问题**，换成 32 位版就行。
 
 ### 下载
 
-**64 位版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.60-61/duanjuzhijiatv-1.0.60%2B61-arm64-v8a.apk)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.60-61/duanjuzhijiatv-1.0.60%2B61-arm64-v8a.apk)
+**64 位版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.62-63/duanjuzhijiatv-1.0.62%2B63-arm64-v8a.apk)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.62-63/duanjuzhijiatv-1.0.62%2B63-arm64-v8a.apk)
 
-**32 位版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.60-61/duanjuzhijiatv-1.0.60%2B61-armeabi-v7a.apk)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.60-61/duanjuzhijiatv-1.0.60%2B61-armeabi-v7a.apk)
+**32 位版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.62-63/duanjuzhijiatv-1.0.62%2B63-armeabi-v7a.apk)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v1.0.62-63/duanjuzhijiatv-1.0.62%2B63-armeabi-v7a.apk)
 
 ---
 
@@ -154,20 +154,20 @@ d31fd2263d6fa857c8a8a645ca2edf4bfa06a22f8305b31968a47d28b5c25305
 2fe53885c0be52a628dcc33a8ad314ff933979bf9eb4195ad0c2a863ea22c801
 ```
 
-### `duanjuzhijiatv-1.0.60+61-arm64-v8a.apk`
+### `duanjuzhijiatv-1.0.62+63-arm64-v8a.apk`
 
-大小 `31777842` 字节。SHA-256：
-
-```
-bb13e1c590070431dd2b005af278e9e93cdae778af2a0fd88b9dcac696ad58ef
-```
-
-### `duanjuzhijiatv-1.0.60+61-armeabi-v7a.apk`
-
-大小 `40326146` 字节。SHA-256：
+大小 `31779098` 字节。SHA-256：
 
 ```
-a65e7f3d38077a89ece22d4bb44b5d8a21330e3f8a5add6a26df6aa43d9b28e4
+d885254ae71842e59d586a13bb557481040b446e8d311ff65d7005f3f763c62b
+```
+
+### `duanjuzhijiatv-1.0.62+63-armeabi-v7a.apk`
+
+大小 `40326870` 字节。SHA-256：
+
+```
+45a41c145b931c476567b2033c396c9af9da45527710af15500fab94a42ad7a7
 ```
 
 这串数字**用来核对文件完整性，不能代替身份认证**。
