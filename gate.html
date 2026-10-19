@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>更新密钥 · 令牌生成</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0f1115;
+    --card: #171a21;
+    --line: #262b35;
+    --text: #e8ecf3;
+    --muted: #97a0b0;
+    --accent: #ff6b4a;
+    --ok: #46c07a;
+    --bad: #ef5b5b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 20px 16px 48px;
+    background: var(--bg);
+    color: var(--text);
+    font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; }
+  h1 { font-size: 19px; margin: 0 0 6px; }
+  .sub { color: var(--muted); font-size: 13px; margin: 0 0 18px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+  label { display: block; font-size: 13px; color: var(--muted); margin: 12px 0 6px; }
+  label:first-child { margin-top: 0; }
+  input {
+    width: 100%;
+    padding: 11px 12px;
+    background: #0d0f13;
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  input:focus { outline: none; border-color: var(--accent); }
+  #key { letter-spacing: 8px; text-align: center; font-size: 22px; }
+  button {
+    width: 100%;
+    margin-top: 16px;
+    padding: 12px;
+    background: var(--accent);
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button:disabled { opacity: .5; cursor: default; }
+  button.ghost {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--line);
+    font-weight: 500;
+  }
+  pre {
+    margin: 0;
+    padding: 12px;
+    background: #0d0f13;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    font: 12.5px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    white-space: pre-wrap;
+    word-break: break-all;
+    max-height: 300px;
+    overflow: auto;
+  }
+  .hint { color: var(--muted); font-size: 12.5px; margin: 10px 0 0; }
+  .selfcheck { font-size: 13px; margin-top: 10px; }
+  .ok { color: var(--ok); }
+  .bad { color: var(--bad); }
+  ol { padding-left: 20px; margin: 8px 0 0; color: var(--muted); font-size: 13px; }
+  ol li { margin: 4px 0; }
+  code { background: #0d0f13; padding: 1px 5px; border-radius: 5px; font-size: 12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>更新密钥 · 令牌生成</h1>
+  <p class="sub">
+    给「在线更新门禁」换密钥用。这个页面在<strong>你的浏览器里</strong>算，不联网、不上传任何东西。
+  </p>
+
+  <div class="card">
+    <label for="key">新密钥（4 位数字）</label>
+    <input id="key" inputmode="numeric" maxlength="4" placeholder="0000" autocomplete="off">
+
+    <label for="salt">盐（换密钥就换一个新盐）</label>
+    <input id="salt" spellcheck="false">
+
+    <label for="iter">迭代次数（与客户端一致，别改）</label>
+    <input id="iter" inputmode="numeric" value="2000">
+
+    <button id="go">生成 gate.json</button>
+    <div class="selfcheck" id="selfcheck"></div>
+  </div>
+
+  <div class="card">
+    <label>生成结果（整段替换仓库里的 gate.json）</label>
+    <pre id="out">还没生成。</pre>
+    <button class="ghost" id="copy" disabled>复制</button>
+    <p class="hint">
+      拿到后：GitHub → <code>hongguo-releases</code> → <code>gate.json</code> → 编辑 → 全选粘贴 → 提交。
+      客户端下次检查更新就会读到新密钥，<strong>不用发新版</strong>。
+    </p>
+  </div>
+
+  <div class="card">
+    <label>换密钥的完整步骤</label>
+    <ol>
+      <li>上面填新密钥，点生成（<code>rev</code> 会自动取当前时间戳，保证比旧的大）。</li>
+      <li>复制那段 JSON，粘贴到 <code>hongguo-releases/gate.json</code>，提交。</li>
+      <li>到 TG 群里把新密钥发出来（旧的立即作废）。</li>
+      <li>想临时关掉门禁：把 <code>enabled</code> 改成 <code>false</code> 再提交，<code>rev</code> 记得加一。</li>
+    </ol>
+    <p class="hint">
+      ⚠️ 只有 4 位数字 ⇒ 全空间一万个，令牌又是公开可读的 ⇒ 这东西是<strong>门槛不是密码</strong>，
+      挡的是随手转发，不是逆向。真正的反倒卖靠「全免费 + 举报」的说明。
+    </p>
+  </div>
+</div>
+
+<script>
+// ── 与 lib/update_gate.dart 的 UpdateGate.token() 逐字节一致 ──────────────
+// sha256(`${salt}:${key}`)，然后反复 sha256(prev + salt) 共 iterations 轮。
+// ⚠️ 改这里就必须同步改 Dart 与 publish 脚本，否则所有已解锁用户瞬间失效。
+async function token(salt, key, iterations) {
+  const enc = new TextEncoder();
+  const saltBytes = enc.encode(salt);
+  let buf = await crypto.subtle.digest('SHA-256', enc.encode(salt + ':' + key));
+  for (let round = 1; round < iterations; round++) {
+    const merged = new Uint8Array(buf.byteLength + saltBytes.length);
+    merged.set(new Uint8Array(buf), 0);
+    merged.set(saltBytes, buf.byteLength);
+    buf = await crypto.subtle.digest('SHA-256', merged);
+  }
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function randomSalt() {
+  const bytes = crypto.getRandomValues(new Uint8Array(6));
+  return 'djzj-' + [...bytes].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+const $key = document.getElementById('key');
+const $salt = document.getElementById('salt');
+const $iter = document.getElementById('iter');
+const $out = document.getElementById('out');
+const $copy = document.getElementById('copy');
+const $go = document.getElementById('go');
+const $check = document.getElementById('selfcheck');
+
+$salt.value = randomSalt();
+
+// 自检：已知向量（与 test/update_gate_test.dart 里那条跨语言向量同源）。
+// 页面算法一旦被改坏，这里立刻变红 —— 比等到用户输密钥报错强得多。
+(async () => {
+  const expected = 'afd5454142d2a5f2508b273a9c967fbdbd3b65733fb33d5da299f0887ffdb984';
+  try {
+    const got = await token('vec-salt', '5766', 40);
+    $check.innerHTML = got === expected
+      ? '<span class="ok">✓ 算法自检通过（与客户端一致）</span>'
+      : '<span class="bad">✗ 算法自检失败：算出的令牌与客户端不一致，别用这个页面生成</span>';
+  } catch (e) {
+    $check.innerHTML = '<span class="bad">✗ 自检异常：' + e + '</span>';
+  }
+})();
+
+$go.addEventListener('click', async () => {
+  const key = $key.value.trim();
+  const salt = $salt.value.trim();
+  const iterations = parseInt($iter.value, 10) || 2000;
+  if (!/^\d{4}$/.test(key)) {
+    $out.textContent = '密钥必须是 4 位数字。';
+    $copy.disabled = true;
+    return;
+  }
+  if (!salt) {
+    $out.textContent = '盐不能为空。';
+    $copy.disabled = true;
+    return;
+  }
+  $go.disabled = true;
+  $go.textContent = '计算中…';
+  try {
+    const hash = await token(salt, key, iterations);
+    const body = {
+      rev: Date.now(),
+      enabled: true,
+      group: 'https://t.me/duanjuzhijia',
+      hint: '4 位数字',
+      salt,
+      iterations,
+      hash,
+    };
+    $out.textContent = JSON.stringify(body, null, 2);
+    $copy.disabled = false;
+  } catch (e) {
+    $out.textContent = '算不出来：' + e;
+    $copy.disabled = true;
+  } finally {
+    $go.disabled = false;
+    $go.textContent = '生成 gate.json';
+  }
+});
+
+$copy.addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText($out.textContent);
+    $copy.textContent = '已复制';
+    setTimeout(() => { $copy.textContent = '复制'; }, 1500);
+  } catch (e) {
+    // 手机浏览器可能不给剪贴板权限：让用户手动全选。
+    const range = document.createRange();
+    range.selectNodeContents($out);
+    const sel = getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+    $copy.textContent = '已选中，长按复制';
+  }
+});
+</script>
+</body>
+</html>
