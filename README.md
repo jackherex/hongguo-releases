@@ -2,7 +2,7 @@
 
 在手机、电脑、电视上找剧、接着上次看。支持搜索、收藏、选集、倍速、自动连播。
 
-**免费使用 · 当前版本：手机版 `1.0.68+69` · 电脑版 `2.0.5+81` · TV 版 `3.0.1+10`**
+**免费使用 · 当前版本：手机版 `1.0.69+70` · 电脑版 `2.0.5+81` · TV 版 `3.0.1+10`**
 
 > 每个下载按钮都给了**两条链接**：
 > **加速下载**走公共加速服务，国内通常更快；连不上时点旁边的**官方直链**。
@@ -25,11 +25,11 @@
 
 | 项目 | 说明 |
 |---|---|
-| 文件 | `duanjuzhijia2-1.0.68+69-arm64-v8a.apk` |
+| 文件 | `duanjuzhijia2-1.0.69+70-arm64-v8a.apk` |
 | 大小 | 34.1 MB |
 | 适用 | 安卓 8.0 及以上（64 位） |
 
-**⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.68-69/duanjuzhijia2-1.0.68%2B69-arm64-v8a.apk)**　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.68-69/duanjuzhijia2-1.0.68%2B69-arm64-v8a.apk)
+**⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.69-70/duanjuzhijia2-1.0.69%2B70-arm64-v8a.apk)**　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.69-70/duanjuzhijia2-1.0.69%2B70-arm64-v8a.apk)
 
 > 安装时系统可能提示「未知来源」或「未经检测」，允许本次安装即可。
 
@@ -130,12 +130,12 @@ TV 版先确认位数选对了（见上面那节）；手机版确认系统是�
 
 下面这组校验值用来核对文件有没有下载完整：
 
-### `duanjuzhijia2-1.0.68+69-arm64-v8a.apk`
+### `duanjuzhijia2-1.0.69+70-arm64-v8a.apk`
 
-大小 `35753962` 字节。SHA-256：
+大小 `35753926` 字节。SHA-256：
 
 ```
-9112fbfe79c0f58f1067d6e680b885a14ef15588ebcc61ef90faacb07314c671
+b95289dfc96784ae4ba8c70b016cd83746225becfc75a1f8a2a5565123ce6bb8
 ```
 
 ### `duanjuzhijia2-2.0.5+81-setup.exe`
