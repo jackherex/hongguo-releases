@@ -2,7 +2,7 @@
 
 在手机、电脑、电视上找剧、接着上次看。支持搜索、收藏、选集、倍速、自动连播。
 
-**免费使用 · 当前版本：手机版 `1.0.67+68` · 电脑版 `2.0.4+80` · TV 版 `3.0.0+9`**
+**免费使用 · 当前版本：手机版 `1.0.68+69` · 电脑版 `2.0.5+81` · TV 版 `3.0.1+10`**
 
 > 每个下载按钮都给了**两条链接**：
 > **加速下载**走公共加速服务，国内通常更快；连不上时点旁边的**官方直链**。
@@ -25,11 +25,11 @@
 
 | 项目 | 说明 |
 |---|---|
-| 文件 | `duanjuzhijia2-1.0.67+68-arm64-v8a.apk` |
+| 文件 | `duanjuzhijia2-1.0.68+69-arm64-v8a.apk` |
 | 大小 | 34.1 MB |
 | 适用 | 安卓 8.0 及以上（64 位） |
 
-**⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.67-68/duanjuzhijia2-1.0.67%2B68-arm64-v8a.apk)**　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.67-68/duanjuzhijia2-1.0.67%2B68-arm64-v8a.apk)
+**⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.68-69/duanjuzhijia2-1.0.68%2B69-arm64-v8a.apk)**　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-phone/releases/download/v2-app-v1.0.68-69/duanjuzhijia2-1.0.68%2B69-arm64-v8a.apk)
 
 > 安装时系统可能提示「未知来源」或「未经检测」，允许本次安装即可。
 
@@ -41,16 +41,16 @@
 
 | 文件 | 是什么 | 适合谁 |
 |---|---|---|
-| `duanjuzhijia2-2.0.4+80-setup.exe`<br>**85.1 MB** | **安装版**：双击安装，自动创建桌面快捷方式，之后能在「设置 → 应用」里正常卸载。 | **大多数人选这个**，省事 |
-| `duanjuzhijia2-2.0.4+80-windows-x64.zip`<br>**117.2 MB** | **免安装版**：解压到任意文件夹，双击里面的程序就能用。不写注册表，不要了直接删文件夹。 | 想放 U 盘随身带、或在别人电脑上用完就删 |
+| `duanjuzhijia2-2.0.5+81-setup.exe`<br>**85.1 MB** | **安装版**：双击安装，自动创建桌面快捷方式，之后能在「设置 → 应用」里正常卸载。 | **大多数人选这个**，省事 |
+| `duanjuzhijia2-2.0.5+81-windows-x64.zip`<br>**117.2 MB** | **免安装版**：解压到任意文件夹，双击里面的程序就能用。不写注册表，不要了直接删文件夹。 | 想放 U 盘随身带、或在别人电脑上用完就删 |
 
 > 两个文件里的程序**功能完全一样**，只是打包方式不同 —— **装一个就行，不用都下**。
 
 ### 下载
 
-**安装版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.4-80/duanjuzhijia2-2.0.4%2B80-setup.exe)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.4-80/duanjuzhijia2-2.0.4%2B80-setup.exe)
+**安装版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.5-81/duanjuzhijia2-2.0.5%2B81-setup.exe)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.5-81/duanjuzhijia2-2.0.5%2B81-setup.exe)
 
-**免安装版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.4-80/duanjuzhijia2-2.0.4%2B80-windows-x64.zip)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.4-80/duanjuzhijia2-2.0.4%2B80-windows-x64.zip)
+**免安装版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.5-81/duanjuzhijia2-2.0.5%2B81-windows-x64.zip)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-pc/releases/download/pc-app-v2.0.5-81/duanjuzhijia2-2.0.5%2B81-windows-x64.zip)
 
 > 首次运行时若弹出蓝色的「Windows 已保护你的电脑」，点「更多信息 → 仍要运行」。
 > 这是因为安装包没有购买数字证书，**不代表文件有问题**；可用文末的校验值核对文件是否完整。
@@ -65,17 +65,17 @@
 
 | 文件 | 通俗说 | 什么时候选 |
 |---|---|---|
-| `duanjuzhijiatv-3.0.0+9-arm64-v8a.apk`<br>**30.4 MB** | **64 位版** | **先试这个**。近几年的盒子和智能电视基本都是 |
-| `duanjuzhijiatv-3.0.0+9-armeabi-v7a.apk`<br>**38.5 MB** | **32 位版** | 上面那个**装不上或打开就闪退**时换这个 |
+| `duanjuzhijiatv-3.0.1+10-arm64-v8a.apk`<br>**30.3 MB** | **64 位版** | **先试这个**。近几年的盒子和智能电视基本都是 |
+| `duanjuzhijiatv-3.0.1+10-armeabi-v7a.apk`<br>**38.4 MB** | **32 位版** | 上面那个**装不上或打开就闪退**时换这个 |
 
 > ⚠️ **重要**：很多电视盒子的芯片是 64 位，但厂家只提供了 32 位系统 —— 这种情况
 > **只能装 32 位版**。所以「64 位版装不上」**不代表盒子有问题**，换成 32 位版就行。
 
 ### 下载
 
-**64 位版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v3.0.0-9/duanjuzhijiatv-3.0.0%2B9-arm64-v8a.apk)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v3.0.0-9/duanjuzhijiatv-3.0.0%2B9-arm64-v8a.apk)
+**64 位版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v3.0.1-10/duanjuzhijiatv-3.0.1%2B10-arm64-v8a.apk)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v3.0.1-10/duanjuzhijiatv-3.0.1%2B10-arm64-v8a.apk)
 
-**32 位版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v3.0.0-9/duanjuzhijiatv-3.0.0%2B9-armeabi-v7a.apk)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v3.0.0-9/duanjuzhijiatv-3.0.0%2B9-armeabi-v7a.apk)
+**32 位版**：⬇ [加速下载](https://gh-proxy.com/https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v3.0.1-10/duanjuzhijiatv-3.0.1%2B10-armeabi-v7a.apk)　｜　[官方直链](https://github.com/jackherex/duanjuzhijia-down-tv/releases/download/tv-app-v3.0.1-10/duanjuzhijiatv-3.0.1%2B10-armeabi-v7a.apk)
 
 ---
 
@@ -130,44 +130,44 @@ TV 版先确认位数选对了（见上面那节）；手机版确认系统是�
 
 下面这组校验值用来核对文件有没有下载完整：
 
-### `duanjuzhijia2-1.0.67+68-arm64-v8a.apk`
+### `duanjuzhijia2-1.0.68+69-arm64-v8a.apk`
 
-大小 `35741138` 字节。SHA-256：
-
-```
-392ee7234d1f087e1b93877c3ea7daf3aa6140064c3eb9618eb95fba87c2a5c2
-```
-
-### `duanjuzhijia2-2.0.4+80-setup.exe`
-
-大小 `89199026` 字节。SHA-256：
+大小 `35753962` 字节。SHA-256：
 
 ```
-889fec31b92791eb2af4fc4a4ac8787bb0ac5aae3187b9ebd5d80dc8c7035a11
+9112fbfe79c0f58f1067d6e680b885a14ef15588ebcc61ef90faacb07314c671
 ```
 
-### `duanjuzhijia2-2.0.4+80-windows-x64.zip`
+### `duanjuzhijia2-2.0.5+81-setup.exe`
 
-大小 `122860589` 字节。SHA-256：
-
-```
-29a08dbf48e63a02f2eb6d62d2a1c5cccaea48b35ee39e53b50282eb784bcb51
-```
-
-### `duanjuzhijiatv-3.0.0+9-arm64-v8a.apk`
-
-大小 `31828206` 字节。SHA-256：
+大小 `89205842` 字节。SHA-256：
 
 ```
-2e7ef8bf7b1aeb6e62c6d035eb14412e04191231830d14229dc615c0f9cb66f3
+44f441aeb5563cd024b0e6b7b9fcc092c7fe628c2adff11d9daf766c01a4aa3d
 ```
 
-### `duanjuzhijiatv-3.0.0+9-armeabi-v7a.apk`
+### `duanjuzhijia2-2.0.5+81-windows-x64.zip`
 
-大小 `40381686` 字节。SHA-256：
+大小 `122876943` 字节。SHA-256：
 
 ```
-74378b201351bcf8b531dcbd36c3f5578dffc34e683d0f5ec1a9406536928a22
+ca473bf6ad20db23591d8641e222ba96345718b089a1d5862bef11fa4872af5b
+```
+
+### `duanjuzhijiatv-3.0.1+10-arm64-v8a.apk`
+
+大小 `31728078` 字节。SHA-256：
+
+```
+678575178eee9184a833aea1bdcccb7ed3bab4e280353a9ea020cebc237b8588
+```
+
+### `duanjuzhijiatv-3.0.1+10-armeabi-v7a.apk`
+
+大小 `40280434` 字节。SHA-256：
+
+```
+9eec9a8c8498d35877e568a368537de21a76d9d58d5d7afeaa207a2c84e79931
 ```
 
 这串数字**用来核对文件完整性，不能代替身份认证**。
