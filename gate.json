@@ -1,9 +1,9 @@
 {
-  "rev": 1792382317345,
+  "rev": 1792387980784,
   "enabled": true,
   "group": "https://t.me/duanjuzhijia",
   "hint": "4 位数字",
-  "salt": "djzj-28ed27e71cb2",
+  "salt": "djzj-5eefb33ab908",
   "iterations": 2000,
-  "hash": "fe47bff6ce962f8806172ab801a97ab1705b5aced021ed02560cf1e51adbae2e"
+  "hash": "485dc144aeb469d40b59ae5a25996ac2d87a8743d932ac5bd46f8a57f8978962"
 }
