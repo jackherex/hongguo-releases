@@ -2,7 +2,7 @@
 
 在手机、电脑、电视上找剧、接着上次看。支持搜索、收藏、选集、倍速、自动连播。
 
-**免费使用 · 当前版本：手机版 `1.0.94+95` · 电脑版 `2.0.17+93` · TV 版 `3.0.25+39`**
+**免费使用 · 当前版本：手机版 `1.0.94+95` · 电脑版 `2.0.17+93` · TV 版 `3.0.25+39`** · [**❤️ 爱发电赞助支持**](https://afdian.com/a/duanjuzhijia)
 
 > 每个下载按钮都给了**两条链接**：
 > **加速下载**走公共加速服务，国内通常更快；连不上时点旁边的**官方直链**。
@@ -176,6 +176,12 @@ TV 版先确认位数选对了（见上面那节）；手机版确认系统是�
 > 请以页面上的为准（版本号、大小、校验值会一起更新）。
 
 [手机版全部版本](https://github.com/jackherex/duanjuzhijia-down-phone/releases) · [电脑版全部版本](https://github.com/jackherex/duanjuzhijia-down-pc/releases) · [TV 版全部版本](https://github.com/jackherex/duanjuzhijia-down-tv/releases)
+
+## 赞助支持
+
+如果觉得软件好用，欢迎通过爱发电赞助支持项目持续维护与更新（自愿支持，不影响免费使用）：
+
+- 爱发电主页：[**https://afdian.com/a/duanjuzhijia**](https://afdian.com/a/duanjuzhijia)
 
 ## 关于本页
 
